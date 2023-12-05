@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajout"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editText_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:inputType="textCapCharacters"/>
+
+    <EditText
+        android:id="@+id/editText_trigramme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Trigramme"
+        android:inputType="textCapCharacters"/>
+
+    <EditText
+        android:id="@+id/editText_stableCoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stable Coin"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_exchanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton_binance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binance"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_autre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autre" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_ajouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/widget_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Widget"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+    <GridView
+        android:background="@color/purple_200"
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/widget_textview"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/actualisé"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid_view"
+        android:layout_centerHorizontal="true"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/widget_textview"
+        android:text="Aucun élément à afficher" />
+
+</RelativeLayout>
